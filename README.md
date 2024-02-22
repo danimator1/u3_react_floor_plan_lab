@@ -1,4 +1,4 @@
-# u3_react_floor_plan_lab<img src="https://i.imgur.com/fx2orT2.png">
+<img src="https://i.imgur.com/fx2orT2.png">
 
 # Floor Plan Lab
 
