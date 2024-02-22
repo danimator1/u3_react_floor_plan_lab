@@ -58,11 +58,26 @@ With the minimum requirements complete, the output should resemble:
 
 <img src="https://i.imgur.com/K8eVbuC.png">
 
+## Bonus I 
+
+Pass the owner of each room into each bedroom via props, so the rooms say something like "Parent's Bedroom", "Baby's Room"... or anything else you'd like for each
+
+
+
 #### Hints
 
 - If a component accepts a prop, that prop must be passed to it by the component that renders it, in other words, parent components pass props to their children components.
+```jsx
+//Parent component
+  <Bedroom name={"Baby"}/>
+```
 
-## Bonus
+```jsx
+//Child component
+<h1> {props.name}'s room</h1>
+```
+
+## Bonus II
 
 Style the components to make the output look like a floor plan:
 
