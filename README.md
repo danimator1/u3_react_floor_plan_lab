@@ -17,17 +17,16 @@ Create a new React app using Vite
 
 ## Minimum Requirements
 
-1. Define each component in its own file. The naming convention to use for a component's file is UpperCamelCase, for example, a `<CodeSandbox>` component's file would be named `CodeSandbox.js` (`CodeSandbox.jsx` also works).
-
+1. Define each component in its own file. The naming convention to use for a component's file is UpperCamelCase.
 2. Export each component from its module. For example:
 
 	```js
-	// CodeSandbox.js
-	
-	export default function CodeSandbox(props) {
+	// FloorPlan.jsx
+ 	
+	export default function FloorPlan(props) {
 	  return (
 	    <div>
-	      <h1>CodeSandbox</h1>
+	      <h1>Floor Plan</h1>
 	    </div>
 	  );
 	}
@@ -69,31 +68,7 @@ Style the components to make the output look like a floor plan:
 
 <img src="https://i.imgur.com/AHq1tCF.png">
 
-#### Hints
 
-- Use `className` and/or `id` on React Elements (`<div>`, `<p>`, `<span>`, etc.) to apply CSS styling using CSS rules in the **styles.css** module.
-
-- Styling the `<FloorPlan>` component as a CSS Grid is a great way to layout its children (grid items).
-
-- Use props being passed in to generate a unique `id` on an element that can be used to target that element for custom styling. For example:
-
-	```js
-	<div className='bedroom' id={`bed-${props.bedNum}`}>
-	```
-	Would result in this `<Bedroom>` having a wrapping `<div>` like:
-	
-	```js
-	<div class="bedroom" id="bed-2">
-	```
-	if it was rendered as:
-	
-	```js
-	<Bedroom bedNum={2} />
-	```
-
-## Not a Deliverable
-
-This lab is not a deliverable.
 
 
 
