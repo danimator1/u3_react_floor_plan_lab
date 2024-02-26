@@ -39,7 +39,7 @@ Create a new React app using Vite
 	| `<FloorPlan>` | Rendered by `<App>`.<br>Renders the following components:<br>- A `<Kitchen>` component<br>- A `<LivingRoom>` component<br>- Three `<Bedroom>` components<br>- Two `<Bath>` components<br>**Render the components in any order you wish to make the floor plan more interesting.** |
 	| `<Kitchen>` | Renders the text "Kitchen" and the following components:<br>- A `<Oven>` component<br>- A `<Sink>` component |
 	| `<LivingRoom>` | Renders the text "Living Room" |
-	| `<Bedroom>` | Accepts a `bedNum` prop and renders the text "Bedroom [bedNum]" (substituting the value of the `bedNum` prop) |
+	| `<Bedroom>` | Accepts a `member` prop and renders the text "Bedroom [member]" (substituting the value of the `member` prop) |
 	| `<Bath>` | Accepts a `size` prop and renders the text "[size] Bath", i.e., "Half Bath", "Full Bath" |
 	| `<Oven>` | Renders the text "Oven" |
 	| `<Sink>` | Renders the text "Sink" |
@@ -69,12 +69,12 @@ Pass the owner of each room into each bedroom via props, so the rooms say someth
 - If a component accepts a prop, that prop must be passed to it by the component that renders it, in other words, parent components pass props to their children components.
 ```jsx
 //Parent component
-  <Bedroom name={"Baby"}/>
+  <Bedroom member={"Baby"}/>
 ```
 
 ```jsx
 //Child component
-<h1> {props.name}'s room</h1>
+<h1> {props.member}'s room</h1>
 ```
 
 ## Bonus II
