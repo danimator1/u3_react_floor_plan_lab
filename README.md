@@ -15,6 +15,18 @@ In the _Intro to JSX_ lesson, you saw the following React basics:
 
 Create a new React app using Vite
 
+```sh
+npm create vite@latest
+```
+
+cd into  your new project, run your
+```sh
+npm i
+```
+to install all dependencies, and begin!
+
+You may want to read through the instructions before you load up your server, as you will need your command line to create a few new folders and files
+
 ## Minimum Requirements
 
 1. Define each component in its own file. The naming convention to use for a component's file is UpperCamelCase.
